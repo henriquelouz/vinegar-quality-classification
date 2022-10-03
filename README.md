@@ -1,1 +1,7 @@
-# vinegar-quality-classification
+# Vinegar Classification Service
+
+This project aims to exercise both modeling skills and MLOps principals. Taking a vinegar dataset, we train a scikit learn model and deploy it as a dockerized Flask REST api. Below there's a MLOps architecture proposal using simple AWS components, such as Lambda functions to run the application serverlessly and monitoring components from the [ELK ML Monitoring Stack](https://www.elastic.co/pt/what-is/elk-stack). More info about the dataset can be found within model/vinegar.ipynb.
+
+![vinegar-classification-service-aws](https://user-images.githubusercontent.com/34424312/193513551-341ead4e-f2c7-4a30-b0cf-5496346c87c3.png)
+
+As that is only a short proposal for this project, we're covering only the Level 0 MLOps proposed in [this article](https://cloud.google.com/architecture/mlops-continuous-delivery-and-automation-pipelines-in-machine-learning) from the Google Architecture Center. In this starting level of maturity, data scientists are still in charge of running exploration, preprocessing and modeling pipelines by themselves. Further improves to this proposal would cover also Levels 1 and 2, which creates a CI/CD pipeline to take care of the deployment of whole ML pipelines to be run in production environment.
